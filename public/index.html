@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>流量详情</title>
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/element-ui/2.15.6/theme-chalk/index.min.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/nprogress/0.2.0/nprogress.min.css">
+<script src="https://cdn.staticfile.org/vue/2.6.10/vue.min.js"></script>
+<% if (htmlWebpackPlugin.options.isProd == 'true') { %>
+<script src="https://cdn.staticfile.org/vue-router/3.5.1/vue-router.min.js"></script>
+<% } %>
+<script src="https://cdn.staticfile.org/axios/0.26.1/axios.min.js"></script>
+<script src="https://cdn.staticfile.org/lodash.js/4.17.21/lodash.min.js"></script>
+<script src="https://cdn.staticfile.org/nprogress/0.2.0/nprogress.min.js"></script>
+<script src="https://cdn.staticfile.org/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdn.staticfile.org/element-ui/2.15.6/index.min.js"></script>
+
+
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but vue-demo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <!--手机调试-->
+    <% if (VUE_APP_ERUDA === 'true') { %>
+      <script src="//cdn.bootcss.com/eruda/1.5.2/eruda.min.js"></script>
+      <script> window.eruda.init(); </script>
+    <% } %>
+  </body>
+
+</html>
