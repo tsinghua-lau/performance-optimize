@@ -41,7 +41,7 @@ module.exports = {
   // outputDir: 'dist', // 打包目录
   configureWebpack: (config) => { // webpack自定义配置
     // 生产环境打包分析体积
-    if (BundleAnalyzerPlugin) {
+    if (process.env.NODE_ENV === 'production' && process.env.npm_config_report) {
       return {
         plugins: [
           new BundleAnalyzerPlugin()

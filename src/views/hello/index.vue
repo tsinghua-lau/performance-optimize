@@ -3,7 +3,7 @@
     <!-- 总流量 -->
     <div class="zll">
       <div class="left">
-        <div class="title">
+        <div class="title clearfix">
           总流量
         </div>
         <div id="jd">
